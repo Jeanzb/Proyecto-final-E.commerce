@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles/head-footer.css" />
+    <link rel="stylesheet" href="assets/styles/home.css" />
+    <link
+      href="
+        https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.min.css
+        "
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="head">
+      <div class="div-padre">
+        <a href="index.html" class="div-imagen">
+          <img src="assets/images/control.png" class="control" />
+          <h2 class="titulo-head">Alura</h2>
+        </a>
+        <div class="box-buscador">
+          <input
+            type="text"
+            class="input-buscador"
+            required
+            placeholder="¿Que deseas buscar?"
+          />
+          <button type="button" class="boton-buscador">
+            <img src="assets/images/lupa.png" class="lupa" alt="" />
+          </button>
+        </div>
+      </div>
+      <a href="screens/login.html" class="boton-login">Login</a>
+    </header>
+    <section class="banner">
+      <div class="info-banner">
+        <h1 class="titulo-banner">Navidad promocional</h1>
+        <p class="texto-banner">
+          Productos seleccionados con un 33% de descuento
+        </p>
+        <a href="#" class="boton-banner">Ver consolas</a>
+      </div>
+    </section>
+    <main>
+      <section class="productos">
+        <div class="productos-box">
+          <div class="header-productos">
+            <h2 class="titulo-tipo">Computadoras</h2>
+            <div class="ver-box">
+              <a href="screens/todos_productos.html" class="texto-todo"
+                >Ver todo</a
+              >
+              <img class="flecha" src="assets/images/flecha.png" alt="" />
+            </div>
+          </div>
+          <div id="Computadoras" class="grid-productos"></div>
+        </div>
+        <div class="productos-box">
+          <div class="header-productos">
+            <h2 class="titulo-tipo">Consolas</h2>
+            <div class="ver-box">
+              <a href="screens/todos_productos.html" class="texto-todo"
+                >Ver todo</a
+              >
+
+              <img class="flecha" src="assets/images/flecha.png" alt="" />
+            </div>
+          </div>
+          <div id="Consolas" class="grid-productos"></div>
+        </div>
+        <div class="productos-box">
+          <div class="header-productos">
+            <h2 class="titulo-tipo">Diversos</h2>
+            <div class="ver-box">
+              <a href="screens/todos_productos.html" class="texto-todo"
+                >Ver todo</a
+              >
+              <img class="flecha" src="assets/images/flecha.png" alt="" />
+            </div>
+          </div>
+          <div id="Diversos" class="grid-productos"></div>
+        </div>
+      </section>
+      <section class="informacion">
+        <div class="info">
+          <div class="box-logo">
+            <img src="assets/images/control.png" class="control" alt="" />
+            <h2 class="titulo-head">Alura</h2>
+          </div>
+          <div class="about">
+            <a href="#" class="about-a">Quienes Somos</a>
+            <a href="#" class="about-a">Politica de privacidad</a>
+            <a href="#" class="about-a">Programa de fidelidad</a>
+            <a href="#" class="about-a">Nuestras Tiendas</a>
+            <a href="#" class="about-a">Anuncie Aqui</a>
+          </div>
+        </div>
+        <form class="formulario-about">
+          <h3 class="titulo-form">Hable con nosotros</h3>
+          <div class="box-input">
+            <input id="input-foot" type="text" required class="input-about" />
+            <span class="span-about">Nombre</span>
+          </div>
+          <div class="box-input2">
+            <textarea id="input-foot" class="area-about"></textarea>
+            <span class="span-area">Escriba su mensaje</span>
+          </div>
+          <button class="boton-about">Enviar mensaje</button>
+        </form>
+      </section>
+    </main>
+    <footer class="foot">
+      <div class="links">
+        <a href="https://github.com/Jeanzb">
+          <img class="logos-fin" src="../assets/images/github.png" alt="" />
+        </a>
+      </div>
+      <p>© Jenzb 2023</p>
+    </footer>
+    <script type="module" src="Controllers/verProductos.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="
+        https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.all.min.j">
+    </script>
+  </body>
+</html>

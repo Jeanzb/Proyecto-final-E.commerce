@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway';
+}
+
+
+
+.productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 5.5rem;
+    width: 100%;
+    background-color: #F5F5F5;
+}
+
+.boton-login{
+    font-size: 1rem;
+    width: 16%;
+    height: 50px;
+}
+
+.grid-productos{
+margin-top: .5rem;
+width: 90%;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: auto;
+grid-column-gap: 20px;
+grid-row-gap:20px;
+}
+
+.card-productos{
+width: 100%;
+}
+
+.imagen-producto{
+width: 100%;
+max-height: 190px;
+min-height: 150px;
+object-fit: cover;
+}
+
+.precio-producto{
+margin-top: .3rem;
+margin-bottom: .3rem;
+color: #464646;
+}
+
+.titulo-tipo{
+color: #464646;
+}
+
+.nombre-producto{
+color: #464646;
+font-size: 1.1rem;
+}
+
+.ver-producto,.texto-todo{
+text-decoration: none;
+color: #2A7AE4;
+font-weight: 700;
+}
+
+.opciones{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: .3rem;
+}
+
+.opciones2{
+    display: flex;
+}
+
+.logo{
+    width: 100%;
+}
+
+.header-todos{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boton-agregar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: #2A7AE4;
+    width: 17%;
+    height: 40px;
+    text-decoration: none;
+}
+
+.header2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 2rem;
+    background-color: #F5F5F5;
+}
+
+
+
+
+@media screen and (max-width:768px){
+    .grid-productos{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .boton-agregar{
+        width: 24%;
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width:455px){
+    .grid-productos{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .nombre-producto{
+        font-size: .9rem;
+    }
+
+    .boton-agregar{
+        width: 40%;
+        font-size: .8rem;
+    }
+
+    .titulo-todos{
+        font-size: 1rem;
+    }
+}

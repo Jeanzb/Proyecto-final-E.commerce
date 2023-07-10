@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway';
+}
+
+.producto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    background-color: #F5F5F5;
+}
+
+.foot-producto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+    background-color: #F5F5F5;
+}
+
+.titulo-foot{
+    width: 80%;
+    text-align: left;
+    color: #464646;
+}
+
+.grid-productos{
+    margin-top: .8rem;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: none;
+    grid-column-gap: 20px;
+    grid-row-gap:20px;
+}
+
+.card-productos{
+    width: 100%;
+}
+    
+.imagen-producto{
+    width: 100%;
+    max-height: 190px;
+    min-height: 150px;
+    object-fit: cover;
+}
+
+.imagen-producto2{
+    width: 45%;
+    max-height: 500px;
+}
+    
+    .precio-producto{
+    margin-top: .3rem;
+    margin-bottom: .3rem;
+    color: #464646;
+}
+
+.nombre-producto{
+    color: #464646;
+    font-size: 1rem;
+    }
+    
+.ver-producto{
+    text-decoration: none;
+    color: #2A7AE4;
+    font-weight: 700;
+}
+
+.card-info-produc{
+    display: flex;
+    width: 80%;
+}
+
+.informacion-producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 55%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.titulo-producto{
+    font-size: 2.7rem;
+    color: #464646;
+}
+
+.precio{
+    font-weight: 700;
+    color: #464646;
+}
+
+.informacion-p{
+    line-height: 25px;
+    text-align: justify;
+}
+
+@media screen and (max-width:768px){
+    .titulo-producto{
+        font-size: 1.5rem;
+    }
+
+    .grid-productos{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:520px){
+    .titulo-producto{
+        font-size: 1rem;
+    }
+
+    .grid-productos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .grid-productos{
+        width: 85%;
+    }
+
+    .card-info-produc{
+        width: 85%;
+    }
+
+    .titulo-foot{
+        width: 85%;
+    }
+
+    .titulo-foot{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .titulo-producto{
+        font-size: 1.2rem;
+    }
+
+    .informacion-producto{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .grid-productos{
+        width: 90%;
+    }
+
+    .card-info-produc{
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .titulo-foot{
+        width: 90%;
+    }
+
+    .imagen-producto2{
+        width: 100%;
+    }
+    
+    .informacion-p{
+        line-height: 20px;
+        text-align: left;
+        font-size: .9rem;
+    }
+
+    .precio{
+        font-size: 1rem;
+    }
+}
+

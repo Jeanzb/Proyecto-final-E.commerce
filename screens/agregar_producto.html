@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/head-footer.css">
+    <link rel="stylesheet" href="../assets/styles/agregar_producto.css">
+    <title>Agregar Producto</title>
+</head>
+<body>
+    <header class="head">
+        <div class="div-padre">
+            <a href="../index.html" class="div-imagen">
+                <img src="../assets/images/control.png" class="control">
+            <h2 class="titulo-head">Alura</h2>
+            </a>
+            <div class="box-buscador">
+                <input type="text" class="input-buscador" required placeholder="¿Que deseas buscar?">
+                <button type="button" class="boton-buscador">
+                    <img src="../assets/images/lupa.png" class="lupa" alt="">
+                </button>
+            </div>
+        </div>
+        <a href="../screens/todos_admin.html" class="boton-login">Menu Administrador</a>
+    </header>
+    <main>
+        <section class="box-form">
+            <form class="formulario">
+                <h3 class="titulo-form titulo-form2">Agregar producto</h3>
+                <input type="text" id="url" required class="input-head" placeholder="Url de la imagen">
+                <input type="text" id="nombre" required class="input-head" placeholder="Nombre del producto">
+                <select id="categoria" class="input-head" required>
+                    <option value="Computadoras">Computadoras</option>
+                    <option value="Consolas">Consolas</option>
+                    <option value="Diversos">Diversos</option>
+                </select>
+                <input type="text" id="precio" required class="input-head" placeholder="Precio del producto">
+                <textarea id="descripcion" class="area" placeholder="Escriba la descripcion del producto"></textarea>
+                <button id="iniciar" class="boton-sesion">Agregar producto</button>
+            </form>
+        </section>
+        <section class="informacion">
+            <div class="info">
+                <div class="box-logo">
+                    <img src="../assets/images/control.png" class="control" alt="">
+                    <h2 class="titulo-head">Alura</h2>
+                </div>
+                <div class="about">
+                    <a href="#" class="about-a">Quienes Somos</a>
+                    <a href="#" class="about-a">Politica de privacidad</a>
+                    <a href="#" class="about-a">Programa de fidelidad</a>
+                    <a href="#" class="about-a">Nuestras Tiendas</a>    
+                    <a href="#" class="about-a">Anuncie Aqui</a>
+                </div>
+               </div>
+            <form class="formulario-about">
+                <h3 class="titulo-form">Hable con nosotros</h3>
+                <div class="box-input">
+                    <input id="input-foot" type="text" required class="input-about">
+                    <span class="span-about">Nombre</span>
+                </div>
+                <div class="box-input2">
+                    <textarea id="input-foot" class="area-about"></textarea>
+                    <span class="span-area">Escriba su mensaje</span>
+                </div>
+                <button class="boton-about">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+    <footer class="foot">
+        <div class="links">
+            <a href="https://github.com/Jeanzb">
+                <img class="logos-fin" src="../assets/images/github.png" alt="">
+            </a>
+        </div>
+        <p>© Jenzb 2023</p>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="../Controllers/productoController.js"></script>
+</body>
+</html>

@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.head{
+    display: flex;
+    margin-left: 5%;
+    gap: 2px;
+    align-items: center;
+    background-color: white;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+}
+
+.titulo-head{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #464646;
+}
+
+.titulo-head::after{
+    content: "Geek";
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    color: #2A7AE4;
+}
+
+.box-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6rem;
+    padding-top: 5rem;
+    background-color: #F5F5F5;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    height: 300px;
+    gap: 8%;
+}
+
+.titulo-form{
+    font-family: 'Raleway', sans-serif;
+    color: #464646;
+    font-size: 1.3rem;
+}
+
+.titulo-form2{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.input-head{
+    outline: none;
+    padding-left: .5rem;
+    height: 22%;
+    border: none;
+    background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    font-size: 1rem;
+    font-family: 'Raleway';
+    color: #A2A2A2;
+}
+
+.input-head::placeholder{
+    color: #A2A2A2;
+    font-family: 'Raleway';
+    font-size: 1rem;
+}
+
+.boton-sesion{
+    height: 20%;
+    background-color: #2A7AE4;
+    color: white;
+    border: none;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.informacion{
+    padding-top: 3.5rem;
+    padding-bottom: 4.5rem;
+    display: flex;
+    gap: 4%;
+    background-color: #EAF2FD;
+}
+
+.box-logo{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: fit-content;
+    padding-top: 2rem;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.about-a{
+    padding-top: 2rem;
+    text-decoration: none;
+    color: #464646;
+    font-family: 'Raleway';
+    font-weight: 700;
+}
+
+.formulario-about{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 43%;
+    gap: 6%;
+}
+
+.box-input{
+    width: 100%;
+    padding-top: 1rem;
+    margin-top: .2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.input-about{
+    outline: none;
+    height: 35px;
+    background: transparent;
+    border: none;
+    padding-left: .4rem;
+    color: #464646;
+    font-family: 'Raleway';
+}
+
+.span-about{
+    position: absolute;
+    color:#A2A2A2;
+    font-family: 'Raleway';
+    font-size: 1rem;
+    transition: .3s;
+    padding-left: .4rem;
+}
+
+.fijar{
+    margin-top: -1%;
+    font-size: .8rem;
+}
+
+.input-about:focus ~span{
+    margin-top: -1%;
+    font-size: .8rem;
+}
+
+.box-input2{
+    width: 100%;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.area-about{
+    resize: none;
+    outline: none;
+    height: 60px;
+    border: none;
+    padding-top: .3rem;
+    padding-left: .4rem;
+    font-family: 'Raleway';
+    color: #464646;
+}
+
+.span-area{
+    position: absolute;
+    color:#A2A2A2;
+    font-family: 'Raleway';
+    font-size: 1rem;
+    transition: .3s;
+    padding-left: .4rem;
+}
+
+.area-about:focus ~span{
+    margin-top: -.9%;
+    font-size: .8rem;
+}
+
+.boton-about{
+    height: 19%;
+    width: 40%;
+    background-color: #2A7AE4;
+    color: #FFFFFF;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: .9rem;
+    border: none;
+}
+
+.foot{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.foot>p{
+    font-family: 'Raleway';
+    font-weight: 700;
+    color: #464646;
+}
+
+.links{
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos-fin{
+    width: 20px;
+}
+
+.div-imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+.info{
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:865px){
+    .formulario{
+        width: 60%;
+    }
+
+    .info{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-logo{
+        padding-top: 0;
+        margin-left: 0;
+        width: 60%;
+        justify-content: center;
+    }
+
+    .about{
+        text-align: center;
+        width: 60%;
+    }
+
+    
+    .about-a{
+        padding-top: 1.7rem;
+    }
+
+}
+
+
+@media screen and (max-width:466px){
+    .formulario{
+        width: 85%;
+    }
+
+    .informacion{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info{
+        width: 85%;
+    }
+
+    .formulario-about{
+        width: 85%;
+        margin-top: 1.5rem;
+    }
+
+    .box-input,.box-input2{
+        margin-top: 1rem;
+    }
+
+    .boton-about{
+        margin-top: 1rem;
+        height: 45px;
+    }
+
+    .fijar{
+        margin-top: -2%;
+    }
+
+    .input-about:focus ~span{
+        margin-top: -2%;
+        font-size: .8rem;
+    }
+
+    .area-about:focus ~span{
+        margin-top: -2%;
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width:350px){
+    .boton-about{
+        width: 50%;
+    }
+}

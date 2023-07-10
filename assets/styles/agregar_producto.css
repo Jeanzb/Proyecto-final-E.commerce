@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.boton-login{
+    width: 17%;
+}
+
+.box-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+    padding-top: 3rem;
+    background-color: #F5F5F5;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+}
+
+.titulo-form1{
+    font-family: 'Raleway', sans-serif;
+    color: #464646;
+    font-size: 2rem;
+}
+
+.titulo-form2{
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.input-head{
+    outline: none;
+    padding-left: .5rem;
+    height: 55px;
+    border: none;
+    background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    font-size: 1rem;
+    font-family: 'Raleway';
+    color: #A2A2A2;
+    margin-top: 5%;
+}
+
+.input-head::placeholder{
+    color: #A2A2A2;
+    font-family: 'Raleway';
+    font-size: 1rem;
+}
+
+.boton-sesion{
+    margin-top: 5%;
+    height: 50px;
+    background-color: #2A7AE4;
+    color: white;
+    border: none;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.area::placeholder{
+    color: #A2A2A2;
+    font-family: 'Raleway';
+    font-size: 1rem;
+}
+
+.area{
+    color: #A2A2A2;
+    background-color: #FFFFFF;
+    border: none;
+    resize: none;
+    outline: none;
+    height: 70px;
+    padding-left: .4rem;
+    padding-top: .4rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    font-family: 'Raleway';
+    margin-top: 5%;
+    font-size: 1rem;
+}
+
+@media screen and (max-width:850px){
+    .formulario{
+        width: 80%;
+    }
+
+    .boton-login{
+        width: 25%;
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width:600px){
+    .boton-login{
+        width: 20%;
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width:466px){
+    .boton-login{
+        width: 40%;
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width:370px){
+    .boton-login{
+        width: 30%;
+        font-size: .7rem;
+    }
+}
+
